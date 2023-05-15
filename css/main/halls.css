@@ -1,0 +1,149 @@
+.halls {
+  margin-bottom: 100px;
+}
+
+.halls__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  /* or 125% */
+  text-transform: uppercase;
+}
+
+.halls__list {
+  list-style-type: none;
+  padding-inline-start: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.halls__item {
+  width: calc(50% - 10px);
+  height: 349px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+}
+
+.hall__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+}
+
+.hall__text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.halls__item:nth-child(1) {
+  background-image: url("../../image/80s_vibes.png");
+}
+
+.halls__item:nth-child(2) {
+  background-image: url("../../image/starWars.png");
+}
+
+.halls__item:nth-child(3) {
+  background-image: url("../../image/wildWest.png");
+}
+
+.halls__item:nth-child(4) {
+  background-image: url("../../image/neonStyle.png");
+}
+
+@media (max-width: 1024px) {
+  .halls {
+    margin-bottom: 70px;
+  }
+
+  .halls__title {
+    margin-bottom: 36px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .halls__list {
+    row-gap: 19px;
+  }
+
+  .halls__item {
+    width: calc(50% - 10px);
+    height: 267px;
+  }
+
+  .hall__text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .halls {
+    margin-bottom: 62px;
+  }
+
+  .halls__title {
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .halls__list {
+    row-gap: 17px;
+  }
+
+  .halls__item {
+    width: calc(50% - 10px);
+    height: 200px;
+  }
+
+  .hall__text {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .halls {
+    margin-bottom: 30px;
+  }
+
+  .halls__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .halls__list {
+    row-gap: 10px;
+  }
+
+  .halls__item {
+    width: 100%;
+    height: 168px;
+  }
+
+  .hall__text {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}

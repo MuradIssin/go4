@@ -1,0 +1,174 @@
+.we-have {
+  margin-bottom: calc(100px + var(--transform-we-have));
+  min-width: 0;
+}
+
+.we-have__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.we-have__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  height: 120%;
+  padding-bottom: var(--transform-we-have);
+  /* padding-bottom: 300px; */
+}
+
+.we-have__card {
+  height: 228px;
+
+  width: calc(33.3% - 13.3px);
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding-top: 166px;
+  padding-left: 40px;
+  transition-duration: 1.2s;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.we-have__card:hover {
+  transform: scale(1.1);
+}
+
+.we-have__card--vr-glass {
+  background-image: url("../../image/vr-glass.png");
+}
+
+.we-have__card--audio {
+  background-image: url("../../image/audio.png");
+  transform: translateY(var(--transform-we-have));
+  /* margin-top: 200px; */
+}
+
+.we-have__card--karaoke {
+  background-image: url("../../image/karaoke.png");
+}
+
+.we-have__card--desk-game {
+  background-image: url("../../image/desk_game.png");
+}
+
+.we-have__card--kino {
+  background-image: url("../../image/kino.png");
+  transform: translateY(var(--transform-we-have));
+}
+
+.we-have__card--play-station {
+  background-image: url("../../image/play_station.png");
+}
+
+@media (max-width:1100px) {
+  body {
+    --transform-we-have: 53px;
+  }
+
+  .we-have {
+    margin-bottom: calc(70px + var(--transform-we-have));
+  }
+
+  .we-have__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .we-have__cards {
+    row-gap: 30px;
+    padding-bottom: 53px;
+  }
+
+  .we-have__card {
+    height: 172px;
+    width: calc(33.3% - 13.3px);
+    padding-top: 114px;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .we-have__card--kino {
+    padding-top: 83px;
+  }
+}
+
+@media (max-width:768px) {
+  body {
+    --transform-we-have: 0px;
+  }
+
+  .we-have {
+    margin-bottom: calc(60px + var(--transform-we-have));
+  }
+
+  .we-have__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .we-have__cards {
+    row-gap: 30px;
+    padding-bottom: 0;
+  }
+
+  .we-have__card {
+    height: 200px;
+    width: calc(50% - 10px);
+    padding-top: 132px;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .we-have__card--kino {
+    padding-top: 132px;
+  }
+}
+
+@media (max-width:683px) {
+  .we-have__card--kino {
+    padding-top: 104px;
+  }
+}
+
+@media (max-width:550px) {
+  .we-have {
+    margin-bottom: 30px;
+  }
+
+  .we-have__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .we-have__cards {
+    row-gap: 10px;
+  }
+
+  .we-have__card {
+    height: 75px;
+    width: calc(50% - 5px);
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .we-have__card--kino {
+    padding-top: 30px;
+  }
+}

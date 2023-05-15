@@ -1,0 +1,11 @@
+.test__wrapper {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.test__block {
+  width: 20%;
+}

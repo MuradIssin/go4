@@ -1,0 +1,472 @@
+.booking {
+  margin-bottom: 50px;
+}
+
+.container__booking {
+  background-color: var(--booking-color);
+  /* background-color: rgb(237, 237, 216); */
+  /* box-sizing: border-box; */
+}
+
+.container__booking-block {
+  width: 1440px;
+  padding: 80px 130px;
+  margin: 0 auto;
+}
+
+.booking__title {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking-hall__title,
+.booking-set__title,
+.booking-order__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-hall__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-hall__label {
+  width: 250px;
+  height: 55px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  background: #FFFFFF;
+  border-radius: 8px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: 1200ms;
+  border: 3px solid #ffffff;
+}
+
+/* правка 22/03 */
+.booking-hall__label:hover {
+  background: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.booking-hall__label:focus {
+  background: #FFFFFF;
+  border: 3px solid #640AA3;
+}
+
+.booking-hall__label:active {
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  background: #6C0287;
+  /* background-color: red; */
+}
+
+.booking-hall__radio-btn .booking-hall__input:checked+.booking-hall__label {
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  background: #6C0287;
+  /* background: #24c266; */
+  /* color: #3f1111; */
+}
+
+.booking-hall__input {
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  /* appearance: none; */
+  /* margin: none; */
+  /* display: block; */
+  display: none;
+}
+
+.booking-hall {
+  /* margin: 0; */
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* наборы */
+.booking-set__block {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 120px;
+}
+
+.booking-set__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+
+/* переписываем все чек-боксы */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.booking-set__block-sub {
+  padding-left: 39px;
+}
+
+.booking-set__block-sub {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: flex-start;
+  gap: 20px;
+
+}
+
+.booking-set__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.booking-set__input {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.booking-set__style {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  /* border: 3px solid salmon; */
+  background-color: #FFFFFF;
+  margin-left: -39px;
+}
+
+.booking-set__input+.booking-set__style::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 400ms;
+}
+
+.booking-set__input:checked+.booking-set__style::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--checked-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 400ms;
+}
+
+.booking-set__input:focus+.booking-set__style {
+  box-shadow: 0 0 0 2px #CD06FF;
+  transition-duration: 400ms;
+}
+
+/* для радиобоксов 2 попытка */
+
+.booking-set__item--radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.booking-set__input--radio {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.booking-set__style--radio {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  /* background-color: #FFFFFF; */
+  margin-left: -39px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0);
+  transition-duration: 1400ms;
+}
+
+.booking-set__style--radio::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  background-color: rgb(256, 256, 256);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.booking-set__input--radio+.booking-set__style--radio::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(256, 256, 256);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 400ms;
+  transition-property: background-color;
+}
+
+.booking-set__input--radio:checked+.booking-set__style--radio::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: var(--checked-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.booking-set__input--radio:focus+.booking-set__style--radio {
+  box-shadow: 0 0 0 2px #CD06FF;
+  transition-duration: 400ms;
+}
+
+
+/* чек бокс завершение*/
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.booking-set__item:last-child {
+  margin-bottom: 0;
+}
+
+.booking-set {
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+/* >>>>>>>>>>>>>>> последний блок */
+
+.booking__order {
+  margin-bottom: 40px;
+}
+
+.booking-order__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.booking-order__input {
+  width: 300px;
+  height: 52px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.booking-order__block-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-order__name-field {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+
+.booking-order__input:focus {
+  border: 2px solid #CD06FF;
+}
+
+.booking-order__block-field {
+  margin-bottom: 14px;
+}
+
+.booking-order__input--space {
+  margin-top: 23px;
+}
+
+/* ****************************************************************************** */
+/* r------------------------------------------------------------------------ */
+
+input[type="date"],
+input[type="time"] {
+  position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-clear-button {
+  z-index: -10;
+}
+
+input[type="date"]::-webkit-input-placeholder,
+input[type="time"]::-webkit-input-placeholder {
+  z-index: 99;
+}
+
+
+input[type="date"]:placeholder,
+input[type="time"]:placeholder {
+  z-index: 99;
+}
+
+/* input[type="date"]:not(.has-value):before,
+input[type="time"]:not(.has-value):before {
+  content: attr(placeholder);
+  width: 100%;
+} */
+
+.booking-order__input--short:not(.has-value):before,
+.booking-order__input--short:not(.has-value):before {
+  content: attr(placeholder);
+  width: 100%;
+}
+
+.booking-order__input--short:not(.has-value):after {
+  content: "";
+  width: 15px;
+  height: 15px;
+
+  /* background-color: #211E1E; */
+
+  /* width: 21px;
+  height: 15px;
+  left: 503px;
+  top: 3619px; */
+
+  /* transform: rotate(-180deg); */
+
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-width: 11px;
+  border-right-width: 11px;
+  border-top: 15px solid black;
+
+}
+
+
+input[type="date"],
+input[type="time"] {
+  width: 134px;
+  padding: 12px 20px;
+}
+
+.booking-order__input--short {
+  width: 134px;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.booking-order__input--date-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* inter number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* .booking-order__input--space:not(.has-value):after { */
+.booking-order__input--space:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-left-width: 11px;
+  border-right-width: 11px;
+  border-top: 15px solid black;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* кнопка забронировать */
+.booking__submit {
+  margin-left: 780px;
+  width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #6C0287;
+}
+
+.booking__submit:hover {
+  background: #EADEED;
+  border: 3px solid #6C0287;
+  transition-duration: 300ms;
+}
+
+.booking__submit:focus {
+  background: #FFFFFF;
+  border: 3px solid #6C0287;
+  transition-duration: 300ms;
+}
+
+.booking__submit:active {
+  background: #EADEED;
+  transition-duration: 300ms;
+}

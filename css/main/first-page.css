@@ -1,0 +1,422 @@
+.first-page {
+  margin-bottom: 100px;
+}
+
+.first-page__block {
+  height: 823px;
+  max-width: 1180px;
+  position: relative;
+}
+
+.first-page__block::after {
+  /* content: url("../../../image/man_vr.png"); */
+  /* content: url("./image/man_vr.png"); */
+  content: url("../../image/man_vr.png");
+
+
+  position: absolute;
+  top: 61px;
+  right: 0px;
+  object-fit: cover;
+}
+
+.first-page__title {
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 900;
+  letter-spacing: -0.10em;
+  text-align: left;
+}
+
+.first-page__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 400;
+  padding-left: 150px;
+  margin-bottom: 30px;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>> */
+
+.first-page__cards {
+  display: flex;
+  gap: 40px;
+  height: 209px;
+  width: 400px;
+  margin-bottom: 150px;
+  justify-content: flex-start;
+  /* flex-basis: 166px; */
+}
+
+.first-page__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.first-page__card-title {
+  color: var(--second-color, #CD06FF);
+  font-size: 100px;
+  line-height: 100%;
+  font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.first-page__card-discription {
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.first-page__card--second {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  height: 174px;
+}
+
+.first-page__card-title--second {
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: all-small-caps;
+}
+
+/* >>>>>>>>>> кнопка заказать */
+
+.first-page__button-order {
+  position: absolute;
+  width: 374px;
+  height: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background-color: #6C0287;
+  box-shadow: 0 0 20px #6c0287;
+  /* filter: blur(10px); */
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 300ms;
+}
+
+
+.first-page__button-order:hover {
+  background-color: #840AA3;
+}
+
+.first-page__button-order:focus {
+  background-color: #840AA3;
+}
+
+.first-page__button-order:active {
+  background-color: #640AA3;
+}
+
+/* >>>>>>>>>> кнопка вниз <<<<<<<<<<<< */
+
+.first-page__down-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.first-page__down-button {
+  width: 97px;
+  height: 97px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  align-self: flex-end;
+  /* transition-duration: 300ms; */
+  /* transition-duration: 3000ms; */
+  outline: none;
+}
+
+.first-page__down-button::before {
+  content: "";
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: #FFFFFF;
+  position: absolute;
+  transition-duration: 300ms;
+}
+
+.first-page__down-button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 34px;
+  left: 37px;
+  transition-duration: 300ms;
+}
+
+.first-page__down-button:hover::before {
+  background: #FFFFFF;
+}
+
+.first-page__down-button:hover:after {
+  border-left: 1px solid #6C0287;
+  border-top: 1px solid #6C0287;
+}
+
+.first-page__down-button:focus {
+  border: 1px solid #CD06FF;
+}
+
+.first-page__down-button:active {
+  border: none;
+}
+
+.first-page__down-button:active::before {
+  background: #CD06FF;
+  border: 1px solid #CD06FF;
+}
+
+.first-page__down-button:active::after {
+  border-left: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+}
+
+@media (max-width: 1280px) {
+  .first-page {
+    margin-bottom: 83px;
+    /* height: 583px; */
+  }
+
+  .first-page__block {
+    height: 583px;
+  }
+
+  .first-page__block::after {
+    top: 63px;
+    content: url("../../image/man_vr-02.png");
+  }
+
+  .first-page__title {
+    font-size: 120px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .first-page__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+
+    padding-left: 100px;
+    margin-bottom: 30px;
+  }
+
+  .first-page__cards {
+    height: 173px;
+    width: 348px;
+    margin-bottom: 80px;
+    flex-basis: 166px;
+  }
+
+  .first-page__card {}
+
+  .first-page__card-title {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .first-page__card-discription {
+    font-size: 26px;
+    line-height: 29.9px;
+  }
+
+  .first-page__card--second {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    height: 145px;
+  }
+
+  .first-page__card-title--second {
+    font-size: 60px;
+    line-height: 84.61px;
+  }
+
+  .first-page__button-order {
+    position: absolute;
+    width: 296px;
+    height: 64px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .first-page__down-wrapper {
+    padding-top: 17px;
+  }
+
+  .first-page__down-button {
+    width: 67px;
+    height: 67px;
+  }
+
+  .first-page__down-button::before {
+    width: 67px;
+    height: 67px;
+  }
+
+  .first-page__down-button::after {
+    width: 13.83px;
+    height: 13.83px;
+    top: 23.78px;
+    left: 27.56px;
+  }
+}
+
+@media (max-width: 880px) {
+  .first-page {
+    margin-bottom: 80px;
+  }
+
+  .first-page__block {
+    height: 537px;
+  }
+
+  .first-page__block::after {
+    top: 58px;
+    content: url("../../image/man_vr-03.png");
+  }
+
+  .first-page__title {
+    font-size: 86px;
+  }
+
+  .first-page__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+
+    padding-left: 70px;
+    margin-bottom: 50px;
+  }
+
+  .first-page__cards {
+    height: 107px;
+    width: 222px;
+    margin-bottom: 100px;
+    flex-basis: 166px;
+  }
+
+  .first-page__card {}
+
+  .first-page__card-title {
+    font-size: 50px;
+    line-height: 71px;
+  }
+
+  .first-page__card-discription {
+    font-size: 16px;
+    line-height: 18.4px;
+  }
+
+  .first-page__card--second {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    height: 92px;
+  }
+
+  .first-page__card-title--second {
+    font-size: 40px;
+    line-height: 56.4px;
+  }
+
+  .first-page__button-order {
+    width: 214px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .first-page__down-wrapper {
+    display: none;
+  }
+}
+
+/* @media (max-width: 550px) { */
+@media (max-width: 650px) {
+  .first-page {
+    margin-bottom: 46px;
+  }
+
+  .first-page__block {
+    height: 204px;
+  }
+
+  .first-page__block::after {
+    top: 25px;
+    content: url("../../image/man_vr-04.png");
+  }
+
+  .first-page__title {
+    font-size: 35px;
+    margin-bottom: 6px;
+  }
+
+  .first-page__subtitle {
+    font-size: 10px;
+    line-height: 14px;
+
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+
+  .first-page__cards {
+    height: 59px;
+    width: 139px;
+    margin-bottom: 30px;
+    /* flex-basis: 166px; */
+    gap: 20px;
+  }
+
+  .first-page__card {}
+
+  .first-page__card-title {
+    font-size: 26px;
+    line-height: 36.66px;
+  }
+
+  .first-page__card-discription {
+    font-size: 10px;
+    line-height: 11.5px;
+  }
+
+  .first-page__card--second {
+    height: 53px;
+  }
+
+  .first-page__card-title--second {
+    font-size: 22px;
+    line-height: 31.02px;
+  }
+
+  .first-page__button-order {
+    width: 117px;
+    height: 27px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+}

@@ -1,0 +1,14 @@
+@import url("normalize.css");
+@import url("global.css");
+
+@import url("var.css");
+@import url("header/header.css");
+@import url("main/first-page/first-page.css");
+@import url("main/we-have/we-have.css");
+@import url("main/halls/halls.css");
+@import url("main/booking/booking.css");
+@import url("main/about-us/about-us.css");
+@import url("main/reviews/reviews.css");
+@import url("main/faq/faq.css");
+@import url("footer/contact.css");
+@import url("footer/footer.css");

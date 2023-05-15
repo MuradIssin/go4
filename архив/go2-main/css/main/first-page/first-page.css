@@ -1,0 +1,197 @@
+.first-page {
+  margin-bottom: 100px;
+}
+
+.first-page__first {
+  height: 823px;
+  width: 1180px;
+  position: relative;
+}
+
+.first-page__first::after {
+  content: url("../../../image/man_vr.png");
+  width: 675px;
+  height: 762px;
+  position: absolute;
+  top: 61px;
+  right: 0px;
+}
+
+.first-page__title {
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 900;
+  letter-spacing: -0.10em;
+  text-align: left;
+}
+
+.first-page__subtitle {
+  font-size: 28px;
+  line-height: 50px;
+  font-weight: 400;
+  padding-left: 150px;
+  margin-bottom: 30px;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>> */
+
+.first-page__cards {
+  display: flex;
+  gap: 40px;
+  height: 209px;
+  width: 400px;
+  margin-bottom: 150px;
+  justify-content: flex-start;
+  flex-basis: 166px;
+}
+
+.first-page__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.first-page__card-title {
+  color: var(--second-color, #CD06FF);
+  font-size: 100px;
+  line-height: 100%;
+  font-weight: 900;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.first-page__card-discription {
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.first-page__card--second {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  height: 174px;
+}
+
+.first-page__card-title--second {
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: all-small-caps;
+}
+
+.first-page__buttons {
+  display: flex;
+  width: 636px;
+  height: 144px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* >>>>>>>>>> кнопка заказать */
+
+.first-page__button-order {
+  width: 374px;
+  height: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  color: #FFFFFF;
+  background-color: #6C0287;
+  box-shadow: 0 0 20px #6c0287;
+  /* filter: blur(10px); */
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 300ms;
+}
+
+
+.first-page__button-order:hover {
+  background-color: #840AA3;
+}
+
+.first-page__button-order:focus {
+  background-color: #840AA3;
+}
+
+.first-page__button-order:active {
+  background-color: #640AA3;
+}
+
+/* >>>>>>>>>> кнопка вниз <<<<<<<<<<<< */
+
+.header__down-button {
+  width: 97px;
+  height: 97px;
+  /* border-radius: 50%; */
+  /* border: 1px solid white; */
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+  align-self: flex-end;
+  transition-duration: 300ms;
+}
+
+.header__down-button::before {
+  content: "";
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: #FFFFFF;
+  position: absolute;
+  transition-duration: 300ms;
+}
+
+.header__down-button::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 34px;
+  left: 37px;
+  transition-duration: 300ms;
+}
+
+.header__down-button:hover::before {
+  background: #FFFFFF;
+
+}
+
+.header__down-button:hover:after {
+  border-left: 1px solid #6C0287;
+  border-top: 1px solid #6C0287;
+}
+
+.header__down-button:focus {
+  border: 1px solid #CD06FF;
+}
+
+.header__down-button:active {
+  border: none;
+}
+
+.header__down-button:active::before {
+  background: #CD06FF;
+  border: 1px solid #CD06FF;
+}
+
+.header__down-button:active::after {
+  border-left: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+}

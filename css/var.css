@@ -1,0 +1,20 @@
+body {
+  --body-color: #1B1A1B;
+  /* --body-color: yellow; */
+
+  --main-color: #FFFFFF;
+
+  --booking-color: #440F51;
+  --checked-color: rgb(131, 87, 36);
+  /* --color-font: #ffffff; */
+  /* --border-color: #CD06FF; */
+  /* --second-color: #CD06FF; */
+
+  --faq-color: #ffffff;
+  --faq-text-color: #1C1A1A;
+
+  --faq-reverse-color: #440F51;
+  --faq-text-reverse-color: white;
+
+  --transform-we-have: 70px;
+}
